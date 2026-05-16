@@ -29,45 +29,6 @@ section .sec-con .sec-banner img.tablet{
 section .sec-con .sec-banner img.mobile{
   display: none;
 }
-/*
-a.product-list img{
-  border-radius: 8px;
-}
-a.product-list .info{
-  padding: 4px 0;
-}
-a.product-list .info p.category{
-  font-size: 0.6rem;
-  line-height: 0.8rem;
-  font-weight: 700;
-  color: var(--txt2-color);
-}
-a.product-list .info p.name{
-  font-size: 0.8rem;
-  line-height: 1rem;
-  font-weight: 400;
-  margin: 4px 0;
-}
-a.product-list .info p.price{
-  display: flex;
-  gap: 4px;
-  align-items: center;
-}
-a.product-list .info p.price span.original-price{
-  display: block;
-  font-size: 0.6rem;
-  line-height: 0.9rem;
-  font-weight: 400;
-  color: var(--main1-color);
-  text-decoration: line-through;
-}
-a.product-list .info p.price span.final-price{
-  display: block;
-  font-size: 0.8rem;
-  font-weight: 700;
-  line-height: 1rem;
-}
-*/
 /* hero banner */
 #hero-banner{
   width: 100%;
@@ -84,7 +45,6 @@ a.product-list .info p.price span.final-price{
   position: absolute;
   top: 0;
   left: 0;
-  /* width: calc(100% * 6 + 20px * 5); */
   display: flex;
   gap: 20px;
 }
@@ -299,6 +259,42 @@ section.sns ul li{
   flex: 0 0 20%;
   height: 25vw;
   position: relative;
+}
+section.sns ul li:nth-child(1){
+  background: url('../../img/sns/sns-0.jpg') no-repeat center / cover;
+}
+section.sns ul li:nth-child(2){
+  background: url('../../img/sns/sns-1.jpg') no-repeat center / cover;
+}
+section.sns ul li:nth-child(3){
+  background: url('../../img/sns/sns-2.jpg') no-repeat center / cover;
+}
+section.sns ul li:nth-child(4){
+  background: url('../../img/sns/sns-3.jpg') no-repeat center / cover;
+}
+section.sns ul li:nth-child(5){
+  background: url('../../img/sns/sns-4.jpg') no-repeat center / cover;
+}
+section.sns ul li:nth-child(6){
+  background: url('../../img/sns/sns-5.jpg') no-repeat center / cover;
+}
+section.sns ul li:nth-child(7){
+  background: url('../../img/sns/sns-6.jpg') no-repeat center / cover;
+}
+section.sns ul li:nth-child(8){
+  background: url('../../img/sns/sns-7.jpg') no-repeat center / cover;
+}
+section.sns ul li:nth-child(9){
+  background: url('../../img/sns/sns-29.jpg') no-repeat center / cover;
+}
+section.sns ul li:nth-child(10){
+  background: url('../../img/sns/sns-36.jpg') no-repeat center / cover;
+}
+section.sns ul li:nth-child(11){
+  background: url('../../img/sns/sns-40.jpg') no-repeat center / cover;
+}
+section.sns ul li:nth-child(12){
+  background: url('../../img/sns/sns-42.jpg') no-repeat center / cover;
 }
 section.sns ul li:nth-child(11),
 section.sns ul li:nth-child(12){

@@ -122,11 +122,6 @@ heroBannerUl.addEventListener('mouseup', function(e){
     return;
   }
 });
-//sns section
-const snsLi = document.querySelectorAll('section.sns ul li');
-for(let i=0;i<snsLi.length;i++){
-  snsLi[i].style.background = `url('../../img/sns/sns-${i}.jpg') no-repeat center / cover`
-};
 //product list create
 import {storePageDataFn, classicData, seoulData, gyeongjuData, busanData, geojeData, jejuData} from './product-rawdata.js';
 const classicProductBox = document.querySelector('section.miffy-classic .product-box');

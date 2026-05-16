@@ -50,8 +50,10 @@ header .top-menu .breadcrumb span.current-page{
   color: var(--txt2-color);
 }
 header .top-menu .goto-menu{
+  flex: 0 1 120px;
   display: flex;
   gap: 12px;
+  justify-content: right;
 }
 header .top-menu .goto-menu a{
   flex: 0 0 32px;
@@ -246,11 +248,14 @@ header nav .inner .bottom-goto span.bar{
     height: 108px;
   }
   header .top-menu{
-    flex: 0 1 1024px;
+    flex: 0 1 100%;
     padding: 24px;
   }
   header .top-menu .breadcrumb span.current-page{
     font-size: 0.7rem;
+  }
+  header .top-menu .goto-menu{
+    flex: 0 1 96px;
   }
   header .top-menu .goto-menu a{
     flex: 0 0 24px;
@@ -279,7 +284,7 @@ header nav .inner .bottom-goto span.bar{
       height: 80px;
     }
     header .top-menu{
-      flex: 0 1 440px;
+      flex: 0 1 100%;
       padding: 20px;
     }
     header .top-menu .breadcrumb h1{
