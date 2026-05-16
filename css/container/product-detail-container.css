@@ -459,6 +459,10 @@ section.recomendation-sec .inner .sec-con{
 section.recomendation-sec .title{
   margin-bottom: 24px;
 }
+section.recomendation-sec .title h3{
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
 section.recomendation-sec .slider-con .slider-inner{
   width: 840px;
 }
@@ -713,7 +717,7 @@ section.refund-sec .inner .refund-con ul li p.tdata{
   border: none;
   outline: none;
   background-color: #ffffff00;
-  font-weight: 0.7rem;
+  font-size: 0.7rem;
   line-height: 0.9rem;
 }
 #tab-order-form .order-total{

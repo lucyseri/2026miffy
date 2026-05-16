@@ -7,17 +7,17 @@ main section.img-sec .inner{
 main section.img-sec .inner.more{
   height: auto;
 }
-main section.img-sec .inner ul.img-box .gutter-sizer{
+main section.img-sec .inner .img-box .gutter-sizer{
   width: 20px;
 }
-main section.img-sec .inner ul.img-box .grid-sizer,
-main section.img-sec .inner ul.img-box li.grid-item{
+main section.img-sec .inner .img-box .grid-sizer,
+main section.img-sec .inner .img-box .grid-item{
   width: calc((100% - 20px * 3) / 4);
 }
-main section.img-sec .inner ul.img-box li.grid-item{
+main section.img-sec .inner .img-box .grid-item{
   margin-bottom: 20px;
 }
-main section.img-sec .inner ul.img-box li img{
+main section.img-sec .inner .img-box .grid-item img{
   display: block;
   width: 100%;
   height: auto;
@@ -56,8 +56,8 @@ main section.img-sec .inner.more span.more-btn{
   main section.img-sec .inner{
     height: 100vh;
   }
-  main section.img-sec .inner ul.img-box .grid-sizer,
-  main section.img-sec .inner ul.img-box li.grid-item{
+  main section.img-sec .inner .img-box .grid-sizer,
+  main section.img-sec .inner .img-box .grid-item{
     width: calc((100% - 20px * 2) / 3);
   }
   main section.img-sec .inner span.more-btn{
@@ -65,14 +65,14 @@ main section.img-sec .inner.more span.more-btn{
   }
 }
 @media screen and (max-width: 440px) {
-  main section.img-sec .inner ul.img-box .gutter-sizer{
+  main section.img-sec .inner .img-box .gutter-sizer{
     width: 14px;
   }
-  main section.img-sec .inner ul.img-box .grid-sizer,
-  main section.img-sec .inner ul.img-box li.grid-item{
+  main section.img-sec .inner .img-box .grid-sizer,
+  main section.img-sec .inner .img-box .grid-item{
     width: calc((100% - 14px * 2) / 3);
   }
-  main section.img-sec .inner ul.img-box li.grid-item{
+  main section.img-sec .inner .img-box .grid-item{
     margin-bottom: 14px;
   }
   main section.img-sec .inner span.more-btn{

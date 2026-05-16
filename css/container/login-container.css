@@ -77,8 +77,7 @@ section.login .login-con .option-box ul.account-find li a{
   line-height: 0.8rem;
   color: var(--txt2-color);
 }
-section.login .login-con .option-box ul.account-find span.bar{
-  display: block;
+section.login .login-con .option-box ul.account-find li.bar{
   width: 1px;
   height: 8px;
   background-color: var(--gray200-color);

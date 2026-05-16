@@ -337,14 +337,16 @@ section.sns ul li a:hover::after{
     display: block;
   }
   #hero-banner .banner-slider{
-    flex: 0 1 976px;
-    height: 484px;
+    flex: 0 1 1024px;
   }
   #hero-banner .banner-slider ul{
     gap: 0;
   }
   #hero-banner .banner-slider ul li{
     flex: 0 1 25%;
+  }
+  #hero-banner .banner-slider ul li a{
+    border-radius: 0;
   }
   #hero-banner .banner-slider ul li a.tablet{
     display: block;
@@ -420,8 +422,7 @@ section.sns ul li a:hover::after{
     display: block;
   }
   #hero-banner .banner-slider{
-    flex: 0 1 400px;
-    height: 440px;
+    flex: 0 1 440px;
   }
   #hero-banner .banner-slider ul li a.tablet{
     display: none;
