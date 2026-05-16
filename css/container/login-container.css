@@ -1,0 +1,193 @@
+main.padding-100{
+  padding-bottom: 100px;
+}
+section.login{
+  min-height: calc(100vh - 280px -100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px 0;
+}
+section.login .inner{
+  flex: 0 1 440px;
+}
+section.login h3{
+  text-align: center;
+}
+section.login .login-con #login-form{
+  padding: 32px 0 8px;
+}
+section.login .login-con #login-form .input-box{
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-bottom: 16px;
+}
+section.login .login-con #login-form .input-box label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+section.login .login-con #login-form .input-box input{
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--back-color);
+  padding: 16px;
+  border: 1px solid var(--gray100-color);
+  border-radius: 8px;
+  outline: none;
+}
+section.login .login-con #login-form .input-box input::placeholder{
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+  color: var(--txt2-color);
+}
+section.login .login-con #login-form button{
+  width: 100%;
+  padding: 16px;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: var(--back-color);
+  background-color: var(--main1-color);
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+section.login .login-con .option-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.login .login-con .option-box ul.account-find{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+section.login .login-con .option-box ul.account-find li a{
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  color: var(--txt2-color);
+}
+section.login .login-con .option-box ul.account-find span.bar{
+  display: block;
+  width: 1px;
+  height: 8px;
+  background-color: var(--gray200-color);
+}
+section.login .login-con .option-box .check-box label{
+  display: block;
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  font-weight: 500;
+  color: var(--txt2-color);
+  position: relative;
+  padding: 0 0 0 24px;
+}
+section.login .login-con .option-box .check-box label input{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+section.login .login-con .option-box .check-box label span.check{
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--gray200-color);
+  border-radius: 4px;
+}
+section.login .login-con .option-box .check-box label input:checked ~ span.check{
+  border: 1px solid var(--main1-color);
+  background: url('../../img/icon/check.svg') no-repeat center / cover;
+}
+section.login .join-btns{
+  padding: 40px 0;
+}
+section.login .join-btns a{
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+section.login .join-btns a span.icon{
+  display: block;
+}
+section.login .join-btns a.kakao{
+  color: #371c1d;
+  background-color: #f9e000;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+section.login .join-btns a.kakao span.icon{
+  width: 20px;
+  height: 18px;
+  background: url('../../img/icon/kakaotalk-icon.svg') no-repeat center / auto;
+}
+section.login .join-btns a.naver{
+  color: #fff;
+  background-color: #03a94d;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+section.login .join-btns a.naver span.icon{
+  width: 16px;
+  height: 16px;
+  background: url('../../img/icon/naver-icon.svg') no-repeat center / auto;
+}
+section.login .join-btns a.default{
+  border: 1px solid var(--main1-color);
+  color: var(--main1-color);
+  font-weight: 700;
+}
+section.login .join-btns a.default:hover{
+  background-color: var(--main1-color);
+  color: var(--back-color);
+}
+@media screen and (max-width: 1024px) {
+  main.padding-100{
+    padding-bottom: 140px;
+  }
+  section.login{
+    min-height: calc(100vh - 108px - 180px - 140px);
+    padding: 140px 20px 0;
+  }
+  section.login .inner{
+    flex: 0 1 644px;
+  }
+  section.login .login-con #login-form{
+    padding: 32px 0 16px;
+  }
+}
+@media screen and (max-width: 440px) {
+  main.padding-100{
+    padding-bottom: 120px;
+  }
+  section.login{
+    min-height: calc(100vh - 80px - 282px - 120px);
+    padding: 120px 20px 0;
+  }
+  section.login .inner{
+    flex: 0 1 400px;
+  }
+}

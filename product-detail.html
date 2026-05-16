@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제주 해녀 키링</title>
+  <link rel="icon" href="img/favicon.ico">
+  <!-- js -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jq_common.js" defer></script>
+  <script src="js/js_product-detail.js" defer></script>
+  <!-- slick slider -->
+  <script src="plugin/slick.min.js"></script>
+  <link rel="stylesheet" href="plugin/slick.css">
+  <!-- style -->
+  <link rel="stylesheet" href="css/page/product-detail.css">
+</head>
+<body>
+  <!-- header -->
+  <div id="header-include"></div>
+  <main>
+    <section class="thum-sec">
+      <h2 class="hidden-title">상품 썸네일</h2>
+      <div class="inner">
+        <div class="all-img">
+          <ul>
+            <li><img src="img/product/jeju-product-1.png" alt="제주 스토어 제주 해녀 미피와 멜라니 컨셉 포토"></li>
+            <li><img src="img/product/jeju-product-1-0.png" alt="제주 스토어 제주 해녀 미피"></li>
+            <li><img src="img/product/jeju-product-1-1.png" alt="제주 스토어 제주 해녀 멜라니"></li>
+            <li><img src="img/product/jeju-product-1-2.png" alt="제주 스토어 제주 해녀 미피와 멜라니"></li>
+          </ul>
+        </div>
+        <div class="selected-img">
+          <img src="img/product/jeju-product-1.png" alt="제주 스토어 제주 해녀 미피와 멜라니">
+          <span class="img-pager">
+            <span class="current">1</span>/<span class="total"></span>
+          </span>
+          <span class="arrow-btn left">
+            <span class="left-arrow"><span class="ir_pm">다음</span></span>
+          </span>
+          <span class="arrow-btn right">
+            <span class="right-arrow"><span class="ir_pm">이전</span></span>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="info-sec">
+      <h2 class="hidden-title">상품 정보</h2>
+      <div class="inner">
+        <div class="product-info">
+          <p class="category">제주 스토어</p>
+          <p class="name">제주 해녀 에디션 인형 키링 2종</p>
+          <p class="price"><span class="original-price">18,000원</span><span class="final-price">16,000원</span></p>
+        </div>
+        <div class="produc-option">
+          <div class="option-list">
+            <label for="option">옵션</label>
+            <div class="input-box">
+              <select name="option" id="option">
+                <option value="default">선택</option>
+                <option value="miffy">미피</option>
+                <option value="melanie">멜라니</option>
+              </select>
+              <span class="arrow"><span class="ir_pm">펼치기</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="seleted-option">
+          <div class="seleted-list miffy-value">
+            <div class="option-name">
+              <span class="name">미피</span>
+              <span class="delete-btn"><span class="ir_pm">삭제</span></span>
+            </div>
+            <div class="count">
+              <div class="num-input-box">
+                <span class="num-btn minus"><span class="ir_pm">빼기</span></span>
+                <input type="number" max="5" min="0" value="0" id="miffy-count1" readonly>
+                <span class="num-btn plus"><span class="ir_pm">더하기</span></span>
+              </div>
+              <div class="price-input-box">
+                <input type="text" id="miffy-price1" value="0원" readonly>
+              </div>
+            </div>
+          </div>
+          <div class="seleted-list melanie-value">
+            <div class="option-name">
+              <span class="name">멜라니</span>
+              <span class="delete-btn"><span class="ir_pm">삭제</span></span>
+            </div>
+            <div class="count">
+              <div class="num-input-box">
+                <span class="num-btn minus"><span class="ir_pm">빼기</span></span>
+                <input type="number" max="5" min="0" value="0" id="melanie-count1" readonly>
+                <span class="num-btn plus"><span class="ir_pm">더하기</span></span>
+              </div>
+              <div class="price-input-box">
+                <input type="text" id="melanie-price1" value="0원" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-total">
+          <label for="total-price">총 상품금액</label>
+          <div class="input-box">
+            <input type="text" name="total" id="total-price1" value="0원" readonly>
+          </div>
+        </div>
+        <div class="btns">
+          <a href="#" class="buy">바로구매</a>
+          <a href="#" class="cart">장바구니</a>
+          <a href="#" class="heart"><span class="icon"></span><span class="ir_pm">하트</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="detail-sec" id="detail-sec">
+      <div class="inner">
+        <div class="info-menu">
+          <h2 class="active"><a href="#detail-sec">상세정보</a></h2>
+          <h2><a href="#review-sec">리뷰</a></h2>
+          <h2><a href="#delivery-sec">주문/베송</a></h2>
+          <h2><a href="#refund-sec">교환 및 환불</a></h2>
+        </div>
+        <div class="detail-con">
+          <img src="img/product/product-detaile-0.png" alt="제주 해녀 키링">
+          <img src="img/product/product-detaile-1.png" alt="제주 해녀가 된 미피와 멜로니. 온라인 스토어에서 만나는 제주 스토어 한정 에디션. 언제 어디서나 함께하는 15cm 제주 해녀 미피. 가품 걱정 없는 서울머천다이징컴퍼니 라이센싱 키링">
+          <img src="img/product/product-detaile-2.png" alt="제주 해녀 미피 인형 25cm. 제주 해녀 미피 키링 15cm. 제주 해녀 멜라니 키링 15cm">
+          <img src="img/product/product-detaile-3.png" alt="미피 제주 해녀와 멜라니 제주 해녀 상세 이미지">
+          <img src="img/product/product-detaile-4.png" alt="인형 세탁 방법. 삶기 세탁 금지. 세탁 전 이물질 제거. 표백제 사용 금지. 비틀릭, 파기 금지, 미지근한 물로 중성세제 세탁. 세탁기 사용 시 세탁망 사용. 크기 8cm x 15cm. 소재 폴리에스테르. 충전제 폴리에스테르 섬유. 제조국 중국">
+        </div>
+      </div>
+    </section>
+    <section class="review-sec" id="review-sec">
+      <div class="inner">
+        <div class="info-menu">
+          <h2><a href="#detail-sec">상세정보</a></h2>
+          <h2 class="active"><a href="#review-sec">리뷰</a></h2>
+          <h2><a href="#delivery-sec">주문/베송</a></h2>
+          <h2><a href="#refund-sec">교환 및 환불</a></h2>
+        </div>
+        <ul class="product-con">
+          <li>
+            <a href="#">
+              <div class="review-thum"><img src="img/product/jeju-product-1.png" alt="실착 이미지"></div>
+              <div class="review-con">
+                <ul class="heart">
+                  <li><span class="ir_pm">하트</span></li>
+                  <li><span class="ir_pm">하트</span></li>
+                  <li><span class="ir_pm">하트</span></li>
+                  <li><span class="ir_pm">하트</span></li>
+                  <li><span class="ir_pm">하트</span></li>
+                </ul>
+                <p class="product-name">[제주 스토어]제주 해녀 에디션 인형 키링 2종</p>
+                <p class="product-option">#미피</p>
+                <p class="review">해녀 미피 짱 귀엽구요 진짜 말랑말랑 보들보들해서 매일매일 쭈물쭈물 짜부짜부 합니다</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="review-thum"><img src="img/product/jeju-product-1.png" alt="실착 이미지"></div>
+              <div class="review-con">
+                <ul class="heart">
+                  <li><span class="ir_pm">하트</span></li>
+                  <li><span class="ir_pm">하트</span></li>
+                  <li><span class="ir_pm">하트</span></li>
+                </ul>
+                <p class="product-name">[제주 스토어]제주 해녀 에디션 인형 키링 2종</p>
+                <p class="product-option">#멜라니</p>
+                <p class="review">출근용 가방에 달고 다닙니다. 다들 태닝 미피라고 해서 슬프네요. 태닝한 미피 아니고 멜라니인데. 그래도 키링은 귀엽고 튼튼합니다</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="review-thum"><img src="img/product/jeju-product-1.png" alt="실착 이미지"></div>
+              <div class="review-con">
+                <ul class="heart">
+                  <li><span class="ir_pm">하트</span></li>
+                  <li><span class="ir_pm">하트</span></li>
+                  <li><span class="ir_pm">하트</span></li>
+                  <li><span class="ir_pm">하트</span></li>
+                </ul>
+                <p class="product-name">[제주 스토어]제주 해녀 에디션 인형 키링 2종</p>
+                <p class="product-option">#미피</p>
+                <p class="review">제주도 여행 갔다가 한참 줄 서서 사왔습니다. 오래 걸리긴 했지만 귀여워서 괜찮습니다.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="more-review-btn">더보기</a>
+      </div>
+    </section>
+    <section class="recomendation-sec">
+      <div class="inner">
+        <div class="sec-con">
+          <div class="title">
+            <h4>더 많은 미피 프렌즈</h4>
+          </div>
+          <div class="slider-con">
+            <div class="slider-inner">
+              <a href="product-detail.html" target="_blank" class="product-list">
+                <div class="img-thum">
+                  <img src="img/product/jeju-product-0.png" alt="제주농부미피">
+                </div>
+                <div class="info">
+                  <p class="category">제주 스토어</p>
+                  <p class="name">제주농부미피</p>
+                  <p class="price">
+                    <span class="final-price">18,000원</span>
+                  </p>
+                </div>
+              </a>
+              <a href="product-detail.html" target="_blank" class="product-list">
+                <div class="img-thum">
+                  <img src="img/product/gyeongju-product-0.png" alt="경주 찰보리스빵 에디션 파우치키링">
+                </div>
+                <div class="info">
+                  <p class="category">경주 스토어</p>
+                  <p class="name">경주 찰보리스빵 에디션 파우치키링</p>
+                  <p class="price">
+                    <span class="original-price">15,000원</span>
+                    <span class="final-price">13,000원</span>
+                  </p>
+                </div>
+              </a>
+              <a href="product-detail.html" target="_blank" class="product-list">
+                <div class="img-thum">
+                  <img src="img/product/gyeongju-product-1.png" alt="경주 찰보리스빵 에디션 멜라니 인형키링">
+                </div>
+                <div class="info">
+                  <p class="category">경주 스토어</p>
+                  <p class="name">경주 찰보리스빵 에디션 멜라니 인형키링</p>
+                  <p class="price">
+                    <span class="original-price">18,000원</span>
+                    <span class="final-price">16,000원</span>
+                  </p>
+                </div>
+              </a>
+              <a href="product-detail.html" target="_blank" class="product-list">
+                <div class="img-thum">
+                  <img src="img/product/gyeongju-product-2.png" alt="미피 석굴암 방울 키링">
+                </div>
+                <div class="info">
+                  <p class="category">경주 스토어</p>
+                  <p class="name">미피 석굴암 방울 키링</p>
+                  <p class="price">
+                    <span class="final-price">5,600원</span>
+                  </p>
+                </div>
+              </a>
+              <a href="product-detail.html" target="_blank" class="product-list">
+                <div class="img-thum">
+                  <img src="img/product/gyeongju-product-3.png" alt="반가사유상 미피 인형">
+                </div>
+                <div class="info">
+                  <p class="category">경주 스토어</p>
+                  <p class="name">반가사유상 미피 인형</p>
+                  <p class="price">
+                    <span class="original-price">42,000원</span>
+                    <span class="final-price">35,000원</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="delivery-sec" id="delivery-sec">
+      <div class="inner">
+        <div class="info-menu">
+          <h2><a href="#detail-sec">상세정보</a></h2>
+          <h2><a href="#review-sec">리뷰</a></h2>
+          <h2 class="active"><a href="#delivery-sec">주문/베송</a></h2>
+          <h2><a href="#refund-sec">교환 및 환불</a></h2>
+        </div>
+        <div class="delivery-con">
+          <ul>
+            <li>
+              <p class="thead">배송방식</p>
+              <p class="tdata">미피 코리아 물류센터 직접 배송(CJ대한통운)</p>
+            </li>
+            <li>
+              <p class="thead">배송지역</p>
+              <p class="tdata">전국(일부지역 제외)</p>
+            </li>
+            <li>
+              <p class="thead">배송비용</p>
+              <p class="tdata">3,000원<br>도서산간지역은 추가 배송비가 발생할 수 있습니다</p>
+            </li>
+            <li>
+              <p class="thead">배송기간</p>
+              <p class="tdata">결제 후 5 ~ 10일 이내(영업일 기준)</p>
+            </li>
+            <li>
+              <p class="thead"></p>
+              <p class="tdata">
+                -상품의 재고상황에 따라 배송기간이 다소 지연될 수도 있습니다<br>
+                -물류센터 사정으로 인해 배송이 지연될 수 있습니다<br>
+                -기본 배송기간 이상 소요되는 상품이거나 품절된 상품은 개별 연락 드립니다
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="refund-sec" id="refund-sec">
+      <div class="inner">
+        <div class="info-menu">
+          <h2><a href="#detail-sec">상세정보</a></h2>
+          <h2><a href="#review-sec">리뷰</a></h2>
+          <h2><a href="#delivery-sec">주문/베송</a></h2>
+          <h2 class="active"><a href="#refund-sec">교환 및 환불</a></h2>
+        </div>
+        <div class="refund-con">
+          <ul>
+            <li>
+              <p class="thead">교환∙반품 방법</p>
+              <p class="tdata">
+                변심에 의한 반품은 상품을 수령한 날로부터 7일 이내 신청 가능합니다<br>
+                표시·광고 내용과 다르거나 제품의 하자 등 계약 내용과 다르게 이행된 경우에는 
+                상품 수령 후 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내 교환/반품 신청 가능합니다<br>
+                교환/반품을 신청할 경우 1:1문의 또는 CS CENTER(1234-5678)를 통해 접수 바랍니다
+              </p>
+            </li>
+            <li>
+              <p class="thead">교환∙반품 불가한 경우</p>
+              <p class="tdata">
+                상품 수령 후 교환·반품 가능 기간을 초과한 경우<br>
+                구매자 귀책 사유로 상품 등이 멸실∙훼손되거나 상품 가치가 현저히 감소한 경우(단, 상품의 내용을 확인하기 위하여 포장 등을 훼손한 경우는 제외)br
+                복제가 가능한 상품 등의 포장을 훼손한 경우(도서 등)br
+                그 외 자세한 내용은 상품 상세페이지 [상품정보]를 참고 바랍니다.
+              </p>
+            </li>
+            <li>
+              <p class="thead">교환∙반품 비용</p>
+              <p class="tdata">변심에 의한 반품의 경우 왕복 배송비(6,000원)는 구매자가 부담합니다.</p>
+            </li>
+            <li>
+              <p class="thead"></p>
+              <p class="tdata">미피 스토어에서 발생되는 모든 교환∙반품은 전자상거래 등에서의 소비자 보호에 관한 법률 및 동법 시행령에 따릅니다.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <div id="footer-include"></div>
+  <!-- tab order form -->
+  <div id="tab-order-bar">
+    <span class="cart"><span class="icon"></span><span class="ir_pm">장바구니</span></span>
+    <span class="buy">바로구매</span>
+  </div>
+  <div id="tab-order-form">
+    <div class="option-con">
+      <div class="option-list">
+        <label for="option2">옵션</label>
+        <div class="input-box">
+          <span class="arrow"><span class="ir_pm">펼치기</span></span>
+          <select name="option2" id="option2">
+            <option value="miffy">미피</option>
+            <option value="melanie">멜라니</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="selected-option">
+      <div class="selected-list miffy-value">
+        <div class="option-name">
+          <p class="name">미피</p>
+          <span class="delet-btn"><span class="ir_pm">삭제</span></span>
+        </div>
+        <div class="count">
+          <div class="num-input-box">
+            <span class="num-btn minus"><span class="ir_pm">빼기</span></span>
+            <input type="number" id="miffy-count2" max="5" min="0" readonly>
+            <span class="num-btn plus"><span class="ir_pm">더하기</span></span>
+          </div>
+          <div class="txt-input-box">
+            <input type="text" id="miffy-price2" value="16,000원" readonly>
+          </div>
+        </div>
+      </div>
+      <div class="selected-list melanie-value">
+        <div class="option-name">
+          <p class="name">멜라니</p>
+          <span class="delet-btn"><span class="ir_pm">삭제</span></span>
+        </div>
+        <div class="count">
+          <div class="num-input-box">
+            <span class="num-btn minus"><span class="ir_pm">빼기</span></span>
+            <input type="number" id="melanie-count2" max="5" min="0" readonly>
+            <span class="num-btn plus"><span class="ir_pm">더하기</span></span>
+          </div>
+          <div class="txt-input-box">
+            <input type="text" id="melanie-price2" value="16,000원" readonly>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="order-total">
+      <label for="total-price2">총 상품금액</label>
+      <div class="input-box">
+        <input type="text" name="total2" id="total-price2" value="0원" readonly>
+      </div>
+    </div>
+    <div class="btn">
+      <span class="cart"><span class="icon"></span><span class="ir_pm">장바구니</span></span>
+      <span class="buy">바로구매</span>
+    </div>
+  </div>
+</body>
+</html>

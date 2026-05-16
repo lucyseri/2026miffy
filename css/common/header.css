@@ -1,0 +1,291 @@
+#header-include{
+  width: 100%;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+header{
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  background: var(--back-color);
+}
+header .top-menu{
+  flex: 0 1 1280px;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header .top-menu .breadcrumb{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+header .top-menu .breadcrumb h1{
+  flex: 0 0 120px;
+}
+header .top-menu .breadcrumb h1 a{
+  width: 100%;
+}
+header .top-menu .breadcrumb h1 a img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+header .top-menu .breadcrumb span.bar{
+  display: block;
+  width: 2px;
+  height: 12px;
+  background-color: var(--gray200-color);
+}
+header .top-menu .breadcrumb span.current-page{
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--txt2-color);
+}
+header .top-menu .goto-menu{
+  display: flex;
+  gap: 12px;
+}
+header .top-menu .goto-menu a{
+  flex: 0 0 32px;
+  background-image: url('../../img/icon/32x32.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 32px;
+}
+header .top-menu .goto-menu a.search{
+  background-position: -64px -32px;
+}
+header .top-menu .goto-menu a.shopping-bag{
+  background-position: -96px -32px;
+}
+header .top-menu .goto-menu a.menu{
+  background-position: -32px -32px;
+}
+header .top-menu .goto-menu a.search:hover{
+  background-position: -64px 0;
+}
+header .top-menu .goto-menu a.menu:hover{
+  background-position: -32px 0;
+}
+header .tab-menu{
+  display: none;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: var(--back-color);
+}
+header .tab-menu ul{
+  display: flex;
+}
+header .tab-menu ul li{
+  flex: 0 1 20%;
+}
+header .tab-menu ul li a{
+  padding: 16px 0 20px;
+}
+header .tab-menu ul li a span{
+  display: block;
+}
+header .tab-menu ul li a span.icon{
+  width: 20px;
+  height: 20px;
+  margin: 0 auto 4px;
+  background-image: url('../../img/icon/20x20.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+header .tab-menu ul li:nth-child(1) a span.icon{
+  background-position: -20px 0;
+}
+header .tab-menu ul li:nth-child(2) a span.icon{
+  background-position: -20px -40px;
+}
+header .tab-menu ul li:nth-child(3) a span.icon{
+  background-position: -20px -80px;
+}
+header .tab-menu ul li:nth-child(4) a span.icon{
+  background-position: -20px -20px;
+}
+header .tab-menu ul li:nth-child(5) a span.icon{
+  background-position: -20px -60px;
+}
+header .tab-menu ul li:nth-child(1) a:hover span.icon{
+  background-position: 0 0;
+}
+header .tab-menu ul li:nth-child(2) a:hover span.icon{
+  background-position: 0 -40px;
+}
+header .tab-menu ul li:nth-child(3) a:hover span.icon{
+  background-position: 0 -80px;
+}
+header .tab-menu ul li:nth-child(4) a:hover span.icon{
+  background-position: 0 -20px;
+}
+header .tab-menu ul li:nth-child(5) a:hover span.icon{
+  background-position: 0 -60px;
+}
+header .tab-menu ul li a span.txt{
+  font-size: 0.5rem;
+  font-weight: 500;
+  text-align: center;
+  color:  var(--txt2-color);
+}
+header .tab-menu ul li a:hover span.txt{
+  color: var(--main1-color);
+}
+header nav{
+  width: 0;
+  height: 100vh;
+  background-color: #00000042;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+header nav.active{
+  width: 100%;
+}
+header nav .inner{
+  width: 100%;
+  max-width: 420px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  background-color: var(--back-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 20px;
+  transition: right ease-in-out 0.4s;
+}
+header nav.active .inner{
+  right: 0;
+}
+header nav .inner .top-nav span.close-btn{
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background-image: url('../../img/icon/32x32.svg');
+  background-repeat: no-repeat;
+  background-position: 0 -32px;
+  cursor: pointer;
+}
+header nav .inner .top-nav span.close-btn:hover{
+  background-position: 0 0;
+}
+header nav .inner .top-nav ul.depth1{
+  padding: 8px 0;
+}
+header nav .inner .top-nav ul.depth1>li .depth1-txt{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header nav .inner .top-nav ul.depth1>li .depth1-txt>a{
+  padding: 16px 0 16px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.1rem;
+}
+header nav .inner .top-nav ul.depth1>li .depth1-txt>a:hover{
+  font-weight: 700;
+}
+header nav .inner .top-nav ul.depth1>li .depth1-txt>span.arrow-btn{
+  flex: 0 0 24px;
+  height: 24px;
+  background: url('../../img/icon/24x24.svg') no-repeat -24px -216px / auto;
+  cursor: pointer;
+}
+header nav .inner .top-nav ul.depth1>li.down .depth1-txt>span.arrow-btn{
+  background: url('../../img/icon/24x24.svg') no-repeat 0 -216px / auto;
+}
+header nav .inner .top-nav ul.depth1>li ul.depth2{
+  display: none;
+}
+header nav .inner .top-nav ul.depth1>li ul.depth2>li>a{
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: var(--txt2-color);
+  padding: 8px 24px;
+}
+header nav .inner .top-nav ul.depth1>li ul.depth2>li>a:hover{
+  color: var(--txt1-color);
+}
+header nav .inner .bottom-goto{
+ display: flex;
+ align-items: center;
+ gap: 24px; 
+}
+header nav .inner .bottom-goto a{
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--txt2-color);
+}
+header nav .inner .bottom-goto span.bar{
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: var(--gray100-color);
+}
+@media screen and (max-width: 1024px) {
+  #header-include{
+    height: 108px;
+  }
+  header .top-menu{
+    flex: 0 1 1024px;
+    padding: 24px;
+  }
+  header .top-menu .breadcrumb span.current-page{
+    font-size: 0.7rem;
+  }
+  header .top-menu .goto-menu a{
+    flex: 0 0 24px;
+    height: 24px;
+    background-image: url('../../img/icon/24x24.svg');
+  }
+  header .top-menu .goto-menu a.search{
+    display: none;
+    background-position: -24px -48px;
+  }
+  header .top-menu .goto-menu a.shopping-bag{
+    background-position: 0 -120px;
+  }
+  header .top-menu .goto-menu a.menu{
+    background-position: -24px -96px;
+  }
+  header .top-menu .goto-menu a.search:hover{
+    background-position: -24px -72px;
+  }
+  header .top-menu .goto-menu a.menu:hover{
+    background-position: 0 -96px;
+  }
+}
+  @media screen and (max-width: 440px) {
+    #header-include{
+      height: 80px;
+    }
+    header .top-menu{
+      flex: 0 1 440px;
+      padding: 20px;
+    }
+    header .top-menu .breadcrumb h1{
+    flex: 0 0 80px;
+  }
+    header .top-menu .breadcrumb span.bar{
+    height: 10px;
+  }
+}

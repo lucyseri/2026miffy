@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Button">
+    <g id="NAVER_login_Light_KR_green_narrow_H48">
+      <path class="cls-1" d="M10.85,8.57L4.92,0H0v16h5.15V7.44l5.93,8.56h4.92V0h-5.15v8.57Z"/>
+    </g>
+  </g>
+</svg>

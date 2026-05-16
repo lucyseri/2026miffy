@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <link rel="icon" href="img/favicon.ico">
+  <!-- js -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jq_common.js" defer></script>
+  <!-- style -->
+  <link rel="stylesheet" href="css/page/login.css">
+</head>
+<body>
+  <!-- header -->
+  <div id="header-include"></div>
+  <main class="padding-100">
+    <!-- login form -->
+    <section class="login">
+      <div class="inner">
+        <h3>로그인</h3>
+        <div class="login-con">
+          <form action="#" id="login-form" method="post">
+            <div class="input-box">
+              <label for="login-id">아이디</label>
+              <input type="text" name="login-id" id="login-id" placeholder="아이디">
+            </div>
+            <div class="input-box">
+              <label for="login-pw">비밀번호</label>
+              <input type="text" name="login-pw" id="login-pw" placeholder="비밀번호">
+            </div>
+            <button>로그인</button>
+          </form>
+          <div class="option-box">
+            <ul class="account-find">
+              <li><a href="#">아이디 찾기</a></li>
+              <span class="bar"></span>
+              <li><a href="#"> 비밀번호 찾기</a></li>
+            </ul>
+            <div class="check-box">
+              <label for="login-state">
+                <input type="checkbox" name="login-state" id="login-state">
+                <span class="check"></span>
+                로그인 상태 유지
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="join-btns">
+          <a href="join.html" class="kakao"><span class="icon"></span>카카오 회원가입/로그인</a>
+          <a href="join.html" class="naver"><span class="icon"></span>네이버 회원가입/로그인</a>
+          <a href="join.html" class="default">일반 회원가입</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <div id="footer-include"></div>
+</body>
+</html>

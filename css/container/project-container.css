@@ -1,0 +1,85 @@
+main{
+  overflow: hidden;
+}
+section.project-sec{
+  min-height: calc(100vh - 100px - 180px - 160px);
+  display: flex;
+  align-items: center;
+}
+section.project-sec .inner{
+  padding-left: 125px;
+}
+section.project-sec .inner ul.project-slider{
+  width: calc(295px * 7 + 20px * 6);
+}
+section.project-sec .inner ul.project-slider li img{
+  display: block;
+  width: 295px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 8px;
+}
+section.project-sec .inner ul.project-slider li span.txt{
+  padding: 0 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+button.slick-arrow{
+  width: 24px;
+  height: 24px;
+  border: none;
+  position: absolute;
+  top: -40px;
+  font-size: 0;
+  cursor: pointer;
+}
+button.slick-arrow.slick-prev{
+  background: url('../../img/icon/24x24.svg') no-repeat 0px -144px / auto;
+  left: 0;
+}
+button.slick-arrow.slick-next{
+  background: url('../../img/icon/24x24.svg') no-repeat -24px -144px / auto;
+  left: 40px;
+}
+button.slick-arrow.slick-prev:hover{
+  background: url('../../img/icon/24x24.svg') no-repeat 0px -168px / auto;
+  left: 0;
+}
+button.slick-arrow.slick-next:hover{
+  background: url('../../img/icon/24x24.svg') no-repeat -24px -168px / auto;
+  left: 40px;
+}
+@media screen and (max-width: 1024px) {
+  section.project-sec{
+    min-height: calc(100vh - 108px - 180px - 140px);
+  }
+  section.project-sec .inner{
+    padding-left: 190px;
+  }
+  section.project-sec .inner ul.project-slider{
+    width: calc(312px * 5 + 20px * 4);
+  }
+  section.project-sec .inner ul.project-slider li img{
+    width: 312px;
+  }
+  section.project-sec .inner ul.project-slider li span.txt{
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  section.project-sec{
+    min-height: calc(100vh - 80px - 282px - 120px);
+  }
+  section.project-sec .inner{
+    padding-left: 89px;
+  }
+  section.project-sec .inner ul.project-slider li img{
+    width: 124px;
+    border-radius: 8px;
+  }
+  section.project-sec .inner ul.project-slider{
+    width: calc(124px * 3 + 20px * 2);
+  }
+}

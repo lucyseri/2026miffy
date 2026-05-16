@@ -1,0 +1,18 @@
+@import url('../common/reset.css');
+@import url('../common/header.css');
+@import url('../common/footer.css');
+@import url('../container/event-container.css');
+header{
+  border-bottom: 1px solid var(--gray100-color);
+}
+header .top-menu .breadcrumb span.current-page::after{
+  content: "스토어";
+}
+@media screen and (max-width: 1024px) {
+  header .top-menu .goto-menu a.search{
+    display: none;
+  }
+  footer .footer-info .inner{
+    padding: 20px 20px 120px;
+  }
+}

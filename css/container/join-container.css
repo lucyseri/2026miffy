@@ -1,0 +1,102 @@
+main.padding-100{
+  padding-bottom: 100px;
+}
+main section.join-btn{
+  min-height: calc(100vh - 100px - 180px - 100px);
+  padding: 100px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.join-btn .inner{
+  flex: 0 1 400px;
+}
+main section.join-btn h3{
+  text-align: center;
+}
+main section.join-btn .join-con .btns-box{
+  padding: 32px 0 0;
+}
+main section.join-btn .join-con .btns-box a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+main section.join-btn .join-con .btns-box a span.icon{
+  display: block;
+}
+main section.join-btn .join-con .btns-box a.kakao{
+  color: #371c1d;
+  background-color: #f9e000;
+}
+main section.join-btn .join-con .btns-box a.kakao span.icon{
+  width: 20px;
+  height: 18px;
+  background: url('../../img/icon/kakaotalk-icon.svg') no-repeat center / auto;
+}
+main section.join-btn .join-con .btns-box a.naver{
+  color: #fff;
+  background-color: #03a94d;
+}
+main section.join-btn .join-con .btns-box a.naver span.icon{
+  width: 16px;
+  height: 16px;
+  background: url('../../img/icon/naver-icon.svg') no-repeat center / auto;
+}
+main section.join-btn .join-con .btns-box a.default{
+  border: 1px solid var(--main1-color);
+  color: var(--main1-color);
+}
+main section.join-btn .join-con .btns-box a.default:hover{
+  background-color: var(--main1-color);
+  color: var(--back-color);
+}
+main section.join-btn .join-con .login-inquiry{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+main section.join-btn .join-con .login-inquiry a{
+  font-size: 0.6rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: var(--txt2-color);
+}
+main section.join-btn .join-con .login-inquiry span.bar{
+  display: block;
+  width: 1px;
+  height: 8px;
+  background-color: var(--gray200-color);
+}
+@media screen and (max-width: 1024px) {
+  main.padding-100{
+    padding-bottom: 140px;
+  }
+  main section.join-btn{
+    min-height: calc(100vh - 108px - 180px - 140px);
+    padding: 140px 24px 0;
+  }
+  main section.join-btn .inner{
+    flex: 0 1 644px;
+  }
+}
+@media screen and (max-width: 440px) {
+  main.padding-100{
+    padding-bottom: 120px;
+  }
+  main section.join-btn{
+    min-height: calc(100vh - 80px - 282px - 120px);
+    padding: 120px 20px 0;
+  }
+  main section.join-btn .inner{
+    flex: 0 1 400px;
+  }
+}

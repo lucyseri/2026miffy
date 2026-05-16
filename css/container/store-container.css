@@ -1,0 +1,556 @@
+/* common */
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.title a.more-btn{
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 0.8rem;
+  color: var(--txt2-color);
+  padding: 4px 8px;
+  border-radius: 12px;
+  border: 1px solid var(--gray100-color);
+}
+section .sec-con .sec-banner img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+section .sec-con .sec-banner img.desktop{
+  display: block;
+}
+section .sec-con .sec-banner img.tablet{
+  display: none;
+}
+section .sec-con .sec-banner img.mobile{
+  display: none;
+}
+/*
+a.product-list img{
+  border-radius: 8px;
+}
+a.product-list .info{
+  padding: 4px 0;
+}
+a.product-list .info p.category{
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  font-weight: 700;
+  color: var(--txt2-color);
+}
+a.product-list .info p.name{
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 400;
+  margin: 4px 0;
+}
+a.product-list .info p.price{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+a.product-list .info p.price span.original-price{
+  display: block;
+  font-size: 0.6rem;
+  line-height: 0.9rem;
+  font-weight: 400;
+  color: var(--main1-color);
+  text-decoration: line-through;
+}
+a.product-list .info p.price span.final-price{
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+*/
+/* hero banner */
+#hero-banner{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+#hero-banner .banner-slider{
+  flex: 0 1 1280px;
+  height: 500px;
+  position: relative;
+}
+#hero-banner .banner-slider ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: calc(100% * 6 + 20px * 5); */
+  display: flex;
+  gap: 20px;
+}
+#hero-banner .banner-slider ul li{
+  flex: 0 1 1280px;
+}
+#hero-banner .banner-slider ul li a{
+  border-radius: 16px;
+  overflow: hidden;
+}
+#hero-banner .banner-slider ul li a.tablet{
+  display: none;
+}
+#hero-banner .banner-slider ul li a.mobile{
+  display: none;
+}
+#hero-banner .banner-slider ul li a img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#hero-banner .banner-slider span.slider-pager{
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  background-color: #0000004d;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+}
+#hero-banner .banner-slider span.slider-pager span.current{
+  color: #fff;
+}
+#hero-banner .banner-slider span.slider-pager span.total{
+  color: #fff;
+}
+/* miffy classic */
+section.miffy-classic .sec-con{
+  display: flex;
+  gap: 20px;
+}
+section.miffy-classic .sec-con .sec-banner{
+  flex: 0 1 calc((100% - 20px) / 2);
+}
+section.miffy-classic .sec-con .product-box{
+  flex: 0 1 calc((100% - 20px) / 2);
+}
+section.miffy-classic .sec-con .product-box a.product-list{
+  display: flex;
+  gap: 20px;
+}
+section.miffy-classic .sec-con .product-box a.product-list:first-child{
+  margin-bottom: 20px;
+}
+section.miffy-classic .sec-con .product-box a.product-list:nth-child(3),
+section.miffy-classic .sec-con .product-box a.product-list:nth-child(4){
+  display: none;
+}
+section.miffy-classic .sec-con .product-box a.product-list .img-thum{
+  flex: 0 1 calc((100% - 20px * 2) / 3);
+}
+section.miffy-classic .sec-con .product-box a.product-list .img-thum img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+section.miffy-classic .sec-con .product-box a.product-list .info{
+  flex: 0 1 calc((100% - 20px * 2) / 3 + 20px);
+}
+/* character menu */
+.character-menu{
+  padding: 160px 20px 0;
+}
+.character-menu ul{
+  display: flex;
+  justify-content: space-between;
+}
+.character-menu ul li{
+  flex: 0 1 80px;
+}
+.character-menu ul li a img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* seoul store */
+section.seoul-store .sec-con .product-box{
+  display: flex;
+  gap: 20px;
+  padding: 40px 0;
+}
+section.seoul-store .sec-con .product-box a.product-list{
+  flex: 0 1 calc((100% - 20px * 3) / 4);
+}
+section.seoul-store .sec-con .product-box a.product-list img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* gyeongju store */
+section.gyeongju-store .sec-con{
+  display: flex;
+  gap: 20px;
+}
+section.gyeongju-store .sec-con .sec-banner{
+  flex: 0 1 400px;
+}
+section.gyeongju-store .sec-con .product-box{
+  flex: 0 1 820px;
+  display: flex;
+  gap: 20px;
+}
+section.gyeongju-store .sec-con .product-box a.product-list{
+  flex: 0 1 calc((100% - 20px) / 2);
+}
+section.gyeongju-store .sec-con .product-box a.product-list:nth-child(3),
+section.gyeongju-store .sec-con .product-box a.product-list:nth-child(4){
+  display: none;
+}
+section.gyeongju-store .sec-con .product-box a.product-list .img-thum img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* busan cafe */
+section.busan-cafe .sec-con .product-box{
+  display: flex;
+  gap: 20px;
+  padding: 40px 0;
+}
+section.busan-cafe .sec-con .product-box a.product-list{
+  flex: 0 1 calc((100% - 20px * 2) / 3);
+  display: flex;
+  gap: 20px;
+}
+section.busan-cafe .sec-con .product-box a.product-list:last-child{
+  display: none;
+}
+section.busan-cafe .sec-con .product-box a.product-list .img-thum{
+  flex: 0 1 calc((100% - 20px) / 2);
+}
+section.busan-cafe .sec-con .product-box a.product-list .img-thum img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+section.busan-cafe .sec-con .product-box a.product-list .info{
+  flex: 0 1 calc((100% - 20px) / 2);
+}
+/* geoje */
+section.geoje-cafe .sec-con{
+  display: flex;
+  gap: 20px;
+  flex-direction: row-reverse;
+}
+section.geoje-cafe .sec-con .sec-banner{
+  flex: 0 1 calc((100% - 20px) / 2);
+}
+section.geoje-cafe .sec-con .product-box{
+  flex: 0 1 calc((100% - 20px) / 2);
+}
+section.geoje-cafe .sec-con .product-box a.product-list{
+  display: flex;
+  gap: 20px;
+}
+section.geoje-cafe .sec-con .product-box a.product-list:nth-child(1){
+  margin-bottom: 20px;
+}
+section.geoje-cafe .sec-con .product-box a.product-list:nth-child(3),
+section.geoje-cafe .sec-con .product-box a.product-list:nth-child(4){
+  display: none;
+}
+section.geoje-cafe .sec-con .product-box a.product-list .img-thum{
+  flex: 0 1 calc((100% - 20px * 2) / 3);
+}
+section.geoje-cafe .sec-con .product-box a.product-list .img-thum img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+section.geoje-cafe .sec-con .product-box a.product-list .info{
+  flex: 0 1 calc((100% - 20px * 2) / 3 * 2);
+}
+/* jeju-store */
+section.jeju-store .sec-con .product-box{
+  display: flex;
+  gap: 20px;
+  padding: 40px 0;
+}
+section.jeju-store .sec-con .product-box a.product-list{
+  flex: 0 1 calc((100% - 20px * 3) / 4);
+}
+section.jeju-store .sec-con .product-box a.product-list .img-thum img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* sns */
+section.sns{
+  max-width: 100%;
+  padding: 160px 0 0;
+}
+section.sns ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+section.sns ul li{
+  flex: 0 0 20%;
+  height: 25vw;
+  position: relative;
+}
+section.sns ul li:nth-child(11),
+section.sns ul li:nth-child(12){
+  display: none;
+}
+section.sns ul li a{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section.sns ul li a:hover{
+  width: 100%;
+  height: 100%;
+  background-color: #0000004d;
+}
+section.sns ul li a:hover::after{
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url('../../img/icon/24x24.svg') no-repeat -24px -120px  / auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* reponsive tablet */
+@media screen and (max-width: 1024px){
+  /* common */
+  section .sec-con .sec-banner img.desktop{
+    display: none;
+  }
+  section .sec-con .sec-banner img.tablet{
+    display: block;
+  }
+  #hero-banner .banner-slider{
+    flex: 0 1 976px;
+    height: 484px;
+  }
+  #hero-banner .banner-slider ul{
+    gap: 0;
+  }
+  #hero-banner .banner-slider ul li{
+    flex: 0 1 25%;
+  }
+  #hero-banner .banner-slider ul li a.tablet{
+    display: block;
+  }
+  #hero-banner .banner-slider ul li a.desktop{
+    display: none;
+  }
+  /* character menu */
+  .character-menu{
+    padding: 140px 24px 0;
+  }
+  .character-menu ul li{
+    flex: 0 1 60px;
+  }
+  /* seoul store */
+  section.seoul-store .sec-con .product-box a.product-list{
+    flex: 0 1 calc((100% - 20px * 2) / 3);
+  }
+  section.seoul-store .sec-con .product-box a:last-child{
+    display: none;
+  }
+  /* gyeongju store */
+  section.gyeongju-store .sec-con .sec-banner{
+    flex: 0 1 312px;
+  }
+  section.gyeongju-store .sec-con .product-box{
+    flex: 0 1 644px;
+  }
+  /* busan cafe */
+  section.busan-cafe .sec-con .product-box{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  section.busan-cafe .sec-con .product-box a.product-list{
+    flex: 0 1 calc((100% - 20px * 1) / 2);
+  }
+  section.busan-cafe .sec-con .product-box a.product-list:last-child{
+    display: flex;
+  }
+  section.busan-cafe .sec-con .product-box a.product-list{
+    width: calc((100% - 20px * 2) / 3);
+  }
+  section.busan-cafe .sec-con .product-box a.product-list .info{
+    flex: 0 1 calc((100% - 20px * 2) / 3 * 2 + 20px);
+  }
+  /* jeju-store */
+  section.jeju-store .sec-con .product-box a.product-list{
+    flex: 0 1 calc((100% - 20px * 2) / 3);
+  }
+  section.jeju-store .sec-con .product-box a.product-list:last-child{
+    display: none;
+  }
+  /* sns */
+  section.sns{
+    padding: 140px 0 0;
+  }
+  section.sns ul li{
+    flex: 0 0 25%;
+    height: 31.25vw;
+  }
+  section.sns ul li:nth-child(11),
+  section.sns ul li:nth-child(12){
+    display: block;
+  }
+}
+/* reponsive mobile */
+@media screen and (max-width: 440px){
+  /* common */
+  section .sec-con .sec-banner img.tablet{
+    display: none;
+  }
+  section .sec-con .sec-banner img.mobile{
+    display: block;
+  }
+  #hero-banner .banner-slider{
+    flex: 0 1 400px;
+    height: 440px;
+  }
+  #hero-banner .banner-slider ul li a.tablet{
+    display: none;
+  }
+  #hero-banner .banner-slider ul li a.mobile{
+    display: block;
+  }
+  /* miffy classic */
+  section.miffy-classic .sec-con{
+    display: block;
+  }
+  section.miffy-classic .sec-con .product-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 14px;
+    padding: 24px 0;
+  }
+  section.miffy-classic .sec-con .product-box a.product-list{
+    flex: 0 1 calc((100% - 14px) / 2);
+    display: block;
+  }
+  section.miffy-classic .sec-con .product-box a.product-list:first-child{
+    margin-bottom: 0;
+  }
+  section.miffy-classic .sec-con .product-box a.product-list:nth-child(3),
+  section.miffy-classic .sec-con .product-box a.product-list:nth-child(4){
+    display: block;
+  }
+  /* character menu */
+  .character-menu{
+    padding: 120px 20px 0;
+  }
+  .character-menu ul li{
+    flex: 0 1 32px;
+  }
+  /* seoul store */
+  section.seoul-store .sec-con .product-box{
+    gap: 20px 14px;
+    padding: 0;
+    flex-wrap: wrap;
+    padding: 24px 0;
+  }
+  section.seoul-store .sec-con .product-box a.product-list{
+    flex: 0 1 calc((100% - 14px) / 2);
+  }
+  section.seoul-store .sec-con .product-box a:last-child{
+    display: block;
+  }
+  /* gyeongju store */
+  section.gyeongju-store .sec-con{
+    display: block;
+  }
+  section.gyeongju-store .sec-con .sec-banner{
+    width: 100%;
+  }
+  section.gyeongju-store .sec-con .product-box{
+    display: flex;
+    gap: 20px 14px;
+    flex-wrap: wrap;
+    padding: 24px 0;
+  }
+  section.gyeongju-store .sec-con .product-box a.product-list{
+    flex: 0 1 calc((100% - 14px) / 2);
+  }
+  section.gyeongju-store .sec-con .product-box a.product-list:nth-child(3),
+  section.gyeongju-store .sec-con .product-box a.product-list:nth-child(4){
+    display: block;
+  }
+  /* busan cafe */
+  section.busan-cafe .sec-con .product-box{
+    flex-wrap: wrap;
+    gap: 20px 14px;
+    padding: 24px 0;
+  }
+  section.busan-cafe .sec-con .product-box a.product-list{
+    flex: 0 1 calc((100% - 14px) / 2);
+    display: block;
+  }
+  section.busan-cafe .sec-con .product-box a.product-list:last-child{
+    display: block;
+  }
+  section.busan-cafe .sec-con .product-box a.product-list img{
+    width: 100%;
+  }
+  section.busan-cafe .sec-con .product-box a.product-list .info{
+    width: 100%;
+  }
+  /* geoje cafe */
+  section.geoje-cafe .sec-con{
+    display: block;
+  }
+  section.geoje-cafe .sec-con .sec-banner{
+    width: 100%;
+  }
+  section.geoje-cafe .sec-con .product-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 14px;
+    padding: 24px 0;
+  }
+  section.geoje-cafe .sec-con .product-box a.product-list{
+    display: block;
+    flex: 0 1 calc((100% - 14px) / 2);
+  }
+  section.geoje-cafe .sec-con .product-box a.product-list:nth-child(1){
+    margin-bottom: 0;
+  }
+  section.geoje-cafe .sec-con .product-box a.product-list:nth-child(3),
+  section.geoje-cafe .sec-con .product-box a.product-list:nth-child(4){
+    display: block;
+  }
+  /* jeju-store */
+  section.jeju-store .sec-con .product-box{
+    gap: 20px 14px;
+    padding: 24px 0;
+    flex-wrap: wrap;
+  }
+  section.jeju-store .sec-con .product-box a.product-list{
+    flex: 0 1 calc((100% - 14px) / 2);
+  }
+  section.jeju-store .sec-con .product-box a.product-list:last-child{
+    display: block;
+  }
+  /* sns */
+  section.sns{
+    padding: 120px 0 0;
+  }
+  section.sns ul li{
+    flex: 0 0 calc(100% / 3);
+    height: calc(100vw / 3 * 5 / 4);
+  }
+}

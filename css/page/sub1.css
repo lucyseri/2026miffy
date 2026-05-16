@@ -1,0 +1,15 @@
+@import url('../common/reset.css');
+@import url('../common/header.css');
+@import url('../common/footer.css');
+@import url('../container/sub1-container.css');
+header .top-menu .breadcrumb span.current-page::after{
+  content: "스토어";
+}
+@media screen and (max-width: 1024px) {
+  header .top-menu .goto-menu a.search{
+    display: none;
+  }
+  header .tab-menu{
+    display: block;
+  }
+}
