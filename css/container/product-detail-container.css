@@ -171,6 +171,7 @@ section.info-sec .inner .produc-option{
 section.info-sec .inner .produc-option .option-list{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 section.info-sec .inner .produc-option .option-list label{
   font-size: 0.7rem;
@@ -184,7 +185,7 @@ section.info-sec .inner .produc-option .option-list .input-box select{
   background-color: #ffffff00;
   border: 1px solid var(--gray200-color);
   border-radius: 24px;
-  padding: 4px 38px 4px 12px;
+  padding: 8px 38px 8px 12px;
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -193,7 +194,7 @@ section.info-sec .inner .produc-option .option-list .input-box select{
 section.info-sec .inner .produc-option .option-list .input-box span.arrow{
   display: block;
   position: absolute;
-  right: 5px;
+  right: 13px;
   top: 50%;
   transform: translateY(-50%);
   width: 18px;
@@ -243,15 +244,19 @@ section.info-sec .inner .seleted-option .seleted-list .count{
   justify-content: space-between;
   align-items: center;
 }
+section.info-sec .inner .seleted-option .seleted-list .count .num-input-box{
+  flex: 0 1 calc(16px * 2 + 40px);
+  display: flex;
+  align-items: center;
+}
 section.info-sec .inner .seleted-option .seleted-list .count .num-input-box span.num-btn{
-  display: inline-block;
-  width: 16px;
+  flex: 0 0 16px;
+  display: block;
   height: 16px;
   background-image: url('../../img/icon/16x16.svg');
   background-repeat: no-repeat;
   background-size: auto;
   cursor: pointer;
-  vertical-align: middle;
 }
 section.info-sec .inner .seleted-option .seleted-list .count .num-input-box span.minus{
   background-position: -16px 0;
@@ -272,7 +277,7 @@ section.info-sec .inner .seleted-option .seleted-list .count .num-input-box span
   background-position: 0 -32px;
 }
 section.info-sec .inner .seleted-option .seleted-list .count .num-input-box input{
-  display: inline-block;
+  display: block;
   width: 40px;
   text-align: center;
   border: none;
@@ -287,6 +292,7 @@ section.info-sec .inner .seleted-option .seleted-list .count .num-input-box inpu
 }
 section.info-sec .inner .seleted-option .seleted-list .count .price-input-box input{
   display: block;
+  width: 100px;
   background-color: #ffffff00;
   border: none;
   outline: none;
@@ -297,6 +303,7 @@ section.info-sec .inner .seleted-option .seleted-list .count .price-input-box in
 section.info-sec .inner .order-total{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 4px 32px;
 }
 section.info-sec .inner .order-total label{
@@ -305,7 +312,8 @@ section.info-sec .inner .order-total label{
   font-weight: 700;
 }
 section.info-sec .inner .order-total .input-box input{
-  display: inline-block;
+  display: block;
+  width: 100px;
   border: none;
   outline: none;
   font-size: 0.8rem;
@@ -476,6 +484,7 @@ section.recomendation-sec .slider-con .slider-inner a.product-list .img-thum img
 }
 section.recomendation-sec .slider-con .slider-inner a.product-list .info p.price{
   flex-wrap: wrap;
+  gap: 0 2px;
 }
 button.slick-arrow{
   position: absolute;
@@ -669,12 +678,17 @@ section.refund-sec .inner .refund-con ul li p.tdata{
 #tab-order-form .selected-option .selected-list .count{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+#tab-order-form .selected-option .selected-list .count .num-input-box{
+  flex: 0 1 calc(16px * 2 + 40px);
+  display: flex;
+  align-items: center;
 }
 #tab-order-form .selected-option .selected-list .count .num-input-box span.num-btn{
-  display: inline-block;
-  width: 16px;
+  display: block;
+  flex: 0 0 16px;
   height: 16px;
-  vertical-align: middle;
   background-image: url('../../img/icon/16x16.svg');
   background-repeat: no-repeat;
   background-size: auto;
@@ -699,7 +713,7 @@ section.refund-sec .inner .refund-con ul li p.tdata{
   background-position: 0 -32px;
 }
 #tab-order-form .selected-option .selected-list .count .num-input-box input{
-  display: inline-block;
+  display: block;
   width: 40px;
   text-align: center;
   border: none;
@@ -732,6 +746,8 @@ section.refund-sec .inner .refund-con ul li p.tdata{
   font-weight: 700;
 }
 #tab-order-form .order-total .input-box input{
+  display: block;
+  width: 100px;
   font-size: 0.8rem;
   line-height: 1rem;
   font-weight: 700;

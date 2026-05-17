@@ -118,6 +118,15 @@ section{
   }
 }
 @media screen and (max-width: 440px){
+  h2{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+  }
+  h3{
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
   main{
     padding-bottom: 100px;
   }
