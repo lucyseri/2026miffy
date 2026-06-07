@@ -47,6 +47,7 @@ section .sec-con .sec-banner img.mobile{
   left: 0;
   display: flex;
   gap: 20px;
+  touch-action: pan-y;
 }
 #hero-banner .banner-slider ul li{
   flex: 0 1 1280px;

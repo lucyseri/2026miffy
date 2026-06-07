@@ -71,21 +71,21 @@ heroBannerUl.addEventListener('mouseout', function(e){
     }
   })
 });
+
 let downTrigger = false;
 let startX;
-heroBannerUl.addEventListener('mousedown', function(e){
-  e.preventDefault();
+heroBannerUl.addEventListener('pointerdown', function(e){
   downTrigger=true;
-  startX = e.pageX
+  startX = e.pageX;
+  clearInterval(heroSliderInt);
 });
-heroBannerUl.addEventListener('mouseup', function(e){
-  e.preventDefault();
+heroBannerUl.addEventListener('pointerup', function(e){
   if(downTrigger){
     const endX = e.pageX;
-    const walk = startX - endX;
-    if(walk>0){
+    const distance = startX - endX;
+    const gap = heroBannerUlLi[2].offsetLeft - heroBannerUlLi[1].offsetLeft;
+    if(distance>50){
       currentNum++;
-      const gap = heroBannerUlLi[2].offsetLeft - heroBannerUlLi[1].offsetLeft;
       if(currentNum>=heroSlideLength-1){
         heroBannerUl.style.left = 0 +'px';
         heroBannerUl.style.transition = 0+'ms';
@@ -98,10 +98,8 @@ heroBannerUl.addEventListener('mouseup', function(e){
         heroBannerUl.style.left = -1*currentNum*gap +'px';
         heroBannerUl.style.transition = 'left ease 0.3s';
       }
-      heroPagerCurrent.innerText = currentNum;
-    }else if(walk<0){
+    }else if(distance<50){
       currentNum--;
-      const gap = heroBannerUlLi[2].offsetLeft - heroBannerUlLi[1].offsetLeft;
       if(currentNum<=0){
         heroBannerUl.style.left = -1*(heroSlideLength-1)*gap +'px';
         heroBannerUl.style.transition = 0+'ms';
@@ -114,14 +112,16 @@ heroBannerUl.addEventListener('mouseup', function(e){
         heroBannerUl.style.left = -1*currentNum*gap +'px';
         heroBannerUl.style.transition = 'left ease 0.3s';
       }
-      heroPagerCurrent.innerText = currentNum;
-    }else{
-      e.defaultPrevented = false;
     }
+    heroPagerCurrent.innerText = currentNum;
   }else{
     return;
   }
 });
+heroBannerUl.addEventListener('pointerleave', function(e){
+  heroSliderInt = setInterval(heroSliderFn, 3000);
+  downTrigger = false;
+})
 //product list create
 import {storePageDataFn, classicData, seoulData, gyeongjuData, busanData, geojeData, jejuData} from './product-rawdata.js';
 const classicProductBox = document.querySelector('section.miffy-classic .product-box');
