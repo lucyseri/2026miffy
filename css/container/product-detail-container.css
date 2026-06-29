@@ -472,7 +472,7 @@ section.recomendation-sec .title h3{
   line-height: 1.5rem;
 }
 section.recomendation-sec .slider-con .slider-inner{
-  width: 840px;
+  width: calc(190px * 4 + 20px * 4);
 }
 section.recomendation-sec .slider-con .slider-inner a.product-list{
   margin-right: 20px;
@@ -943,6 +943,9 @@ section.refund-sec .inner .refund-con ul li p.tdata{
   /* recomendation section */
   section.recomendation-sec .slider-con .slider-inner{
     width: calc(100% + 14px);
+  }
+  section.recomendation-sec .slider-con .slider-inner a.product-list{
+    margin-right: 14px;
   }
   section.recomendation-sec .slider-con .slider-inner a.product-list .info p.price span.original-price{
     font-size: 0.5rem;

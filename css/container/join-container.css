@@ -77,24 +77,18 @@ main section.join-btn .join-con .login-inquiry span.bar{
   background-color: var(--gray200-color);
 }
 @media screen and (max-width: 1024px) {
-  main.padding-100{
-    padding-bottom: 140px;
-  }
   main section.join-btn{
-    min-height: calc(100vh - 108px - 180px - 140px);
-    padding: 140px 24px 0;
+    min-height: calc(100vh - 108px - 180px - 100px);
+    padding: 100px 24px 0;
   }
   main section.join-btn .inner{
     flex: 0 1 644px;
   }
 }
 @media screen and (max-width: 440px) {
-  main.padding-100{
-    padding-bottom: 120px;
-  }
   main section.join-btn{
-    min-height: calc(100vh - 80px - 282px - 120px);
-    padding: 120px 20px 0;
+    min-height: calc(100vh - 80px - 282px - 100px);
+    padding: 100px 20px 0;
   }
   main section.join-btn .inner{
     flex: 0 1 400px;

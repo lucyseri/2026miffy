@@ -169,7 +169,7 @@ section.login .join-btns a.default:hover{
   }
   section.login{
     min-height: calc(100vh - 108px - 180px - 140px);
-    padding: 140px 20px 0;
+    padding: 140px 24px 0;
   }
   section.login .inner{
     flex: 0 1 644px;

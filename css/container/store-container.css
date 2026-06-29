@@ -333,6 +333,7 @@ section.sns ul li a:hover::after{
   section .sec-con .sec-banner img.tablet{
     display: block;
   }
+  /* hero slider banner */
   #hero-banner .banner-slider{
     flex: 0 1 1024px;
   }
@@ -340,7 +341,7 @@ section.sns ul li a:hover::after{
     gap: 0;
   }
   #hero-banner .banner-slider ul li{
-    flex: 0 1 25%;
+    flex: 0 1 1024px;
   }
   #hero-banner .banner-slider ul li a{
     border-radius: 0;
@@ -418,6 +419,7 @@ section.sns ul li a:hover::after{
   section .sec-con .sec-banner img.mobile{
     display: block;
   }
+  /* hero slider banner */
   #hero-banner .banner-slider{
     flex: 0 1 440px;
   }

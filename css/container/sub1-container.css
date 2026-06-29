@@ -121,7 +121,7 @@ section.product-sec .product-pager span.right-arrow.inactive{
 /* tablet */
 @media screen and (max-width: 1024px) {
   section.product-sec .product-con ul{
-    flex-wrap: wrap;
+    gap: 32px 20px;
   }
   section.product-sec .product-con ul li{
     flex: 0 1 calc((100% - 20px * 2) / 3);

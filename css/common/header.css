@@ -278,19 +278,26 @@ header nav .inner .bottom-goto span.bar{
   header .top-menu .goto-menu a.menu:hover{
     background-position: 0 -96px;
   }
+  header nav .inner{
+    max-width: 744px;
+    padding: 40px 24px;
+  }
 }
-  @media screen and (max-width: 440px) {
-    #header-include{
-      height: 80px;
-    }
-    header .top-menu{
-      flex: 0 1 100%;
-      padding: 20px;
-    }
-    header .top-menu .breadcrumb h1{
+@media screen and (max-width: 440px) {
+  #header-include{
+    height: 80px;
+  }
+  header .top-menu{
+    flex: 0 1 100%;
+    padding: 20px;
+  }
+  header .top-menu .breadcrumb h1{
     flex: 0 0 80px;
   }
-    header .top-menu .breadcrumb span.bar{
+  header .top-menu .breadcrumb span.bar{
     height: 10px;
+  }
+  header nav .inner{
+    padding: 40px 20px;
   }
 }

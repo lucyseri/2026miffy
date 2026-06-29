@@ -3,6 +3,10 @@ section.info-sec .title{
   padding-bottom: 24px;
   border-bottom: 1px solid var(--gray100-color);
 }
+section.info-sec .title h2{
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
 section.info-sec .title p{
   font-size: 0.8rem;
   line-height: 1rem;
@@ -77,6 +81,10 @@ section.info-sec .sec-con a.code-btn{
   font-weight: 500;
 }
 /* special miffy product section */
+section.product-sec h2{
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
 section.product-sec .sec-con{
   padding-top: 24px;
   display: flex;
