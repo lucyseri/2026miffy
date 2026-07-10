@@ -149,7 +149,7 @@ export function pagerLengthFn(data){
 export function pagerLiCreateFn(num){
   let html ='';
   for(let i=0;i<num;i++){
-    html += `<li>${i+1}</li>`;
+    html += `<li><button>${i+1}</button></li>`;
   }
   return html;
 };

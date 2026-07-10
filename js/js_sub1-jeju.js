@@ -44,12 +44,12 @@ let pagerLiLength = pagerLengthFn(jejuData);
 const pagerUl = document.querySelector('.product-pager ul');
 pagerUl.innerHTML = pagerLiCreateFn(pagerLiLength);
 //active pager
-const pagerUlLi = document.querySelectorAll('.product-pager ul li');
+const pagerUlLi = document.querySelectorAll('.product-pager ul li button');
 let currentPageIdx = 0;
 pagerActiveFn(currentPageIdx, pagerUlLi);
 //pager arrow btn
-const leftArrowBtn = document.querySelector('section.product-sec .product-pager span.left-arrow');
-const rightArrowBtn = document.querySelector('section.product-sec .product-pager span.right-arrow');
+const leftArrowBtn = document.querySelector('section.product-sec .product-pager button.left-arrow');
+const rightArrowBtn = document.querySelector('section.product-sec .product-pager button.right-arrow');
 arrowBtnActiveFn(currentPageIdx, leftArrowBtn, rightArrowBtn, pagerLiLength);
 leftArrowBtn.addEventListener('click', function(e){
   currentPageIdx--;

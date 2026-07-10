@@ -1,5 +1,6 @@
 //thumnail section
 const thumSecImgUl = document.querySelector('section.thum-sec .all-img ul');
+const thumSecImgUlLiA = document.querySelectorAll('section.thum-sec .all-img ul li a');
 const thumSecImgUlLiImg = document.querySelectorAll('section.thum-sec .all-img ul li img');
 const thumSecSelectedImg = document.querySelector('section.thum-sec .selected-img img');
 const thumSecTotalNum = document.querySelector('section.thum-sec .selected-img span.img-pager span.total');
@@ -15,11 +16,12 @@ function imgSelectFn(){
 };
 let currentThumIdx = 0;
 thumSecImgUl.addEventListener('click', function(e){
-  thumSecImgUlLiImg.forEach((el, idx)=>{
-    if(e.target == el){
+  e.preventDefault();
+  thumSecImgUlLiA.forEach((el, idx)=>{
+    if(e.target.closest('a') == el){
       thumSecCurrentNum.innerText = idx+1;
-      selectedImgAlt = el.getAttribute('alt');
-      selectedImgSrc = el.getAttribute('src');
+      selectedImgAlt = thumSecImgUlLiImg[idx].getAttribute('alt');
+      selectedImgSrc = thumSecImgUlLiImg[idx].getAttribute('src');
       imgSelectFn();
     }
   });
@@ -51,28 +53,28 @@ rightArrowBtn.addEventListener('click', function(){
 //info section
 const infoSecMiffy = document.querySelector('section.info-sec .miffy-value');
 const infoSecMiffyNum = document.querySelector('section.info-sec .miffy-value input[type=number]')
-const infoSecMiffyNumMinus = document.querySelector('section.info-sec .miffy-value span.minus');
-const infoSecMiffyNumPlus = document.querySelector('section.info-sec .miffy-value span.plus');
+const infoSecMiffyNumMinus = document.querySelector('section.info-sec .miffy-value button.minus');
+const infoSecMiffyNumPlus = document.querySelector('section.info-sec .miffy-value button.plus');
 const infoSecMiffyPrice = document.querySelector('section.info-sec .miffy-value input[type=text]');
-const infoSecMiffyDelet = document.querySelector('section.info-sec .miffy-value span.delete-btn');
+const infoSecMiffyDelet = document.querySelector('section.info-sec .miffy-value button.delete-btn');
 const infoSecMelanie = document.querySelector('section.info-sec .melanie-value');
 const infoSecMelanieNum = document.querySelector('section.info-sec .melanie-value input[type=number]');
-const infoSecMelanieNumMinus = document.querySelector('section.info-sec .melanie-value span.minus');
-const infoSecMelanieNumPlus = document.querySelector('section.info-sec .melanie-value span.plus');
+const infoSecMelanieNumMinus = document.querySelector('section.info-sec .melanie-value button.minus');
+const infoSecMelanieNumPlus = document.querySelector('section.info-sec .melanie-value button.plus');
 const infoSecMelaniePrice = document.querySelector('section.info-sec .melanie-value input[type=text]');
-const infoSecMelanieDelet = document.querySelector('section.info-sec .melanie-value span.delete-btn');
+const infoSecMelanieDelet = document.querySelector('section.info-sec .melanie-value button.delete-btn');
 const infoSecTotalPrice = document.querySelector('section.info-sec #total-price1');
 //popup order form
 const popupFormMiffy = document.querySelector('#tab-order-form .miffy-value');
 const popupFormMiffyNum = document.querySelector('#tab-order-form .miffy-value input[type=number]')
-const popupFormMiffyNumMinus = document.querySelector('#tab-order-form .miffy-value span.minus');
-const popupFormMiffyNumPlus = document.querySelector('#tab-order-form .miffy-value span.plus');
+const popupFormMiffyNumMinus = document.querySelector('#tab-order-form .miffy-value button.minus');
+const popupFormMiffyNumPlus = document.querySelector('#tab-order-form .miffy-value button.plus');
 const popupFormMiffyPrice = document.querySelector('#tab-order-form .miffy-value input[type=text]');
 const popupFormMiffyDelet = document.querySelector('#tab-order-form .selected-option .miffy-value span.delet-btn');
 const popupFormMelanie = document.querySelector('#tab-order-form .melanie-value');
 const popupFormMelanieNum = document.querySelector('#tab-order-form .melanie-value input[type=number]');
-const popupFormMelanieNumMinus = document.querySelector('#tab-order-form .melanie-value span.minus');
-const popupFormMelanieNumPlus = document.querySelector('#tab-order-form .melanie-value span.plus');
+const popupFormMelanieNumMinus = document.querySelector('#tab-order-form .melanie-value button.minus');
+const popupFormMelanieNumPlus = document.querySelector('#tab-order-form .melanie-value button.plus');
 const popupFormMelaniePrice = document.querySelector('#tab-order-form .melanie-value input[type=text]');
 const popupFormMelanieDelet = document.querySelector('#tab-order-form .selected-option .melanie-value span.delet-btn');
 const popupFormTotalPrice = document.querySelector('#tab-order-form #total-price2');

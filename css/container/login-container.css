@@ -100,6 +100,11 @@ section.login .login-con .option-box .check-box label input{
   transform: translateY(-50%);
   opacity: 0;
 }
+section.login .login-con .option-box .check-box label:focus-within{
+  outline: 2px solid #005fcc;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
 section.login .login-con .option-box .check-box label span.check{
   display: block;
   width: 16px;

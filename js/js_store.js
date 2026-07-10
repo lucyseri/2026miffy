@@ -15,19 +15,28 @@ function heroBannerHeightFn(num){
 };
 let ratioNum;
 let heightSetTimeout;
+function ratioSetFn(){
+  if(window.innerWidth>1024){
+    ratioNum=500/1240;
+  }else if(window.innerWidth>440 && window.innerWidth<=1024){
+    ratioNum=484/976;
+  }else if(window.innerWidth<=440){
+    ratioNum=440/400;
+  };
+};
+ratioSetFn();
+heroBannerHeightFn(ratioNum);
 window.addEventListener('resize', function(){
   clearTimeout(heightSetTimeout);
   heightSetTimeout=setTimeout(function(){
     if(window.innerWidth>1024){
-      ratioNum=500/1240;
       heroBannerUl.style.width = `calc(100% * ${heroSlideLength} + 20px * ${heroSlideLength-1})`;
     }else if(window.innerWidth>440 && window.innerWidth<=1024){
-      ratioNum=484/976;
       heroBannerUl.style.width = `calc(100% * ${heroSlideLength})`;
     }else if(window.innerWidth<=440){
-      ratioNum=440/400;
       heroBannerUl.style.width = `calc(100% * ${heroSlideLength})`;
     };
+    ratioSetFn();
     heroBannerHeightFn(ratioNum);
   }, 300)
 });
@@ -71,10 +80,10 @@ heroBannerUl.addEventListener('mouseout', function(e){
     }
   })
 });
-
 let downTrigger = false;
 let startX;
 heroBannerUl.addEventListener('pointerdown', function(e){
+  heroBannerUl.setPointerCapture(e.pointerId);
   downTrigger=true;
   startX = e.pageX;
   clearInterval(heroSliderInt);
@@ -118,10 +127,6 @@ heroBannerUl.addEventListener('pointerup', function(e){
     return;
   }
 });
-heroBannerUl.addEventListener('pointerleave', function(e){
-  heroSliderInt = setInterval(heroSliderFn, 3000);
-  downTrigger = false;
-})
 //product list create
 import {storePageDataFn, classicData, seoulData, gyeongjuData, busanData, geojeData, jejuData} from './product-rawdata.js';
 const classicProductBox = document.querySelector('section.miffy-classic .product-box');

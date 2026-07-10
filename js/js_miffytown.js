@@ -3,9 +3,9 @@ const characterInnerA = document.querySelectorAll('section.characters-sec .inner
 const characterInnerAImg = document.querySelectorAll('section.characters-sec .inner a.character img');
 const characterInnerATXT = document.querySelectorAll('section.characters-sec .inner a.character span.txt');
 const popup = document.querySelector('.popup');
-const popupCloseBtn = document.querySelector('.popup span.close-btn');
+const popupCloseBtn = document.querySelector('.popup button.close-btn');
 const popupImg = document.querySelector('.popup .popup-con img');
-const popupH5 = document.querySelector('.popup .popup-con h5');
+const popupH4 = document.querySelector('.popup .popup-con h4');
 const popupP = document.querySelector('.popup .popup-con p');
 const characterInfo = [
   {name: '미피', sub: '미피는 순수하고 긍정적인 성격에 새로운 경험을 즐기는 토끼랍니다.'},
@@ -27,18 +27,22 @@ for(let i = 0;i<characterInnerA.length;i++){
   characterInnerATXT[i].innerText = characterInfo[i].name;
 };
 //popup
+let lastTarget 
 charactersInner.addEventListener('click', function(e){
   e.preventDefault();
   characterInnerA.forEach((el, idx)=>{
-    if(e.target.parentElement==el){
+    if(e.target.closest('a.character')==el){
       popup.classList.add('on');
+      popupCloseBtn.focus();
       popupImg.setAttribute('src', `img/miffytown-page/miffytown-img${idx}.png`);
       popupImg.setAttribute('alt', characterInfo[idx].name);
-      popupH5.innerText = characterInfo[idx].name;
+      popupH4.innerText = characterInfo[idx].name;
       popupP.innerText = characterInfo[idx].sub;
+      lastTarget = el;
     }
   })
 });
 popupCloseBtn.addEventListener('click', function(e){
   popup.classList.remove('on');
+  lastTarget.focus();
 });

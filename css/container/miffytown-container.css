@@ -70,15 +70,18 @@ section.characters-sec .inner a.character span.txt{
   background-color: var(--back-color);
   border-radius: 0.8rem;
 }
-.popup .popup-inner span.close-btn{
+.popup .popup-inner button.close-btn{
   display: block;
   width: 32px;
   height: 32px;
   margin: 0 auto;
   cursor: pointer;
   background: url('../../img/icon/32x32.svg') no-repeat 0 -32px / auto;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
 }
-.popup .popup-inner span.close-btn:hover{
+.popup .popup-inner button.close-btn:hover{
   background: url('../../img/icon/32x32.svg') no-repeat 0 0 / auto;
 }
 .popup .popup-inner .popup-con img{

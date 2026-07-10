@@ -33,7 +33,7 @@ main section.img-sec .inner .bottom-gra{
 main section.img-sec .inner.more .bottom-gra{
   display: none;
 }
-main section.img-sec .inner span.more-btn{
+main section.img-sec .inner button.more-btn{
   display: block;
   width: 400px;
   font-size: 0.9rem;
@@ -48,8 +48,13 @@ main section.img-sec .inner span.more-btn{
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
+  background-color: transparent;
 }
-main section.img-sec .inner.more span.more-btn{
+main section.img-sec .inner button.more-btn:hover{
+  background-color: var(--main1-color);
+  color: var(--back-color);
+}
+main section.img-sec .inner.more button.more-btn{
   display: none;
 }
 @media screen and (max-width: 1024px) {
@@ -60,7 +65,7 @@ main section.img-sec .inner.more span.more-btn{
   main section.img-sec .inner .img-box .grid-item{
     width: calc((100% - 20px * 2) / 3);
   }
-  main section.img-sec .inner span.more-btn{
+  main section.img-sec .inner button.more-btn{
     width: 312px;
   }
 }
@@ -75,7 +80,7 @@ main section.img-sec .inner.more span.more-btn{
   main section.img-sec .inner .img-box .grid-item{
     margin-bottom: 14px;
   }
-  main section.img-sec .inner span.more-btn{
+  main section.img-sec .inner button.more-btn{
     width: 262px;
   }
 }

@@ -175,17 +175,20 @@ header nav .inner{
 header nav.active .inner{
   right: 0;
 }
-header nav .inner .top-nav span.close-btn{
+header nav .inner .top-nav button.close-btn{
   display: block;
   width: 32px;
   height: 32px;
   margin: 0 auto;
+  background-color: transparent;
   background-image: url('../../img/icon/32x32.svg');
   background-repeat: no-repeat;
   background-position: 0 -32px;
   cursor: pointer;
+  padding: 0;
+  border: 0;
 }
-header nav .inner .top-nav span.close-btn:hover{
+header nav .inner .top-nav button.close-btn:hover{
   background-position: 0 0;
 }
 header nav .inner .top-nav ul.depth1{
@@ -205,13 +208,16 @@ header nav .inner .top-nav ul.depth1>li .depth1-txt>a{
 header nav .inner .top-nav ul.depth1>li .depth1-txt>a:hover{
   font-weight: 700;
 }
-header nav .inner .top-nav ul.depth1>li .depth1-txt>span.arrow-btn{
+header nav .inner .top-nav ul.depth1>li .depth1-txt>button.arrow-btn{
   flex: 0 0 24px;
   height: 24px;
   background: url('../../img/icon/24x24.svg') no-repeat -24px -216px / auto;
   cursor: pointer;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
 }
-header nav .inner .top-nav ul.depth1>li.down .depth1-txt>span.arrow-btn{
+header nav .inner .top-nav ul.depth1>li.down .depth1-txt>button.arrow-btn{
   background: url('../../img/icon/24x24.svg') no-repeat 0 -216px / auto;
 }
 header nav .inner .top-nav ul.depth1>li ul.depth2{

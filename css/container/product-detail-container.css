@@ -234,10 +234,14 @@ section.info-sec .inner .seleted-option .seleted-list .option-name span.name{
   line-height: 0.9rem;
   font-weight: 400;
 }
-section.info-sec .inner .seleted-option .seleted-list .option-name span.delete-btn{
+section.info-sec .inner .seleted-option .seleted-list .option-name button.delete-btn{
   width: 16px;
   height: 16px;
   background: url('../../img/icon/16x16.svg') no-repeat 0 -48px / auto;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 section.info-sec .inner .seleted-option .seleted-list .count{
   display: flex;
@@ -249,7 +253,7 @@ section.info-sec .inner .seleted-option .seleted-list .count .num-input-box{
   display: flex;
   align-items: center;
 }
-section.info-sec .inner .seleted-option .seleted-list .count .num-input-box span.num-btn{
+section.info-sec .inner .seleted-option .seleted-list .count .num-input-box button.num-btn{
   flex: 0 0 16px;
   display: block;
   height: 16px;
@@ -257,23 +261,26 @@ section.info-sec .inner .seleted-option .seleted-list .count .num-input-box span
   background-repeat: no-repeat;
   background-size: auto;
   cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
 }
-section.info-sec .inner .seleted-option .seleted-list .count .num-input-box span.minus{
+section.info-sec .inner .seleted-option .seleted-list .count .num-input-box button.minus{
   background-position: -16px 0;
 }
-section.info-sec .inner .seleted-option .seleted-list .count .num-input-box span.plus{
+section.info-sec .inner .seleted-option .seleted-list .count .num-input-box button.plus{
   background-position: 0 0;
 }
-section.info-sec .inner .seleted-option .seleted-list .count .num-input-box span.minus:hover{
+section.info-sec .inner .seleted-option .seleted-list .count .num-input-box button.minus:hover{
   background-position: -16px -16px;
 }
-section.info-sec .inner .seleted-option .seleted-list .count .num-input-box span.plus:hover{
+section.info-sec .inner .seleted-option .seleted-list .count .num-input-box button.plus:hover{
   background-position: 0 -16px;
 }
-section.info-sec .inner .seleted-option .seleted-list .count .num-input-box span.minus.inactive{
+section.info-sec .inner .seleted-option .seleted-list .count .num-input-box button.minus.inactive{
   background-position: -16px -32px;
 }
-section.info-sec .inner .seleted-option .seleted-list .count .num-input-box span.plus.inactive{
+section.info-sec .inner .seleted-option .seleted-list .count .num-input-box button.plus.inactive{
   background-position: 0 -32px;
 }
 section.info-sec .inner .seleted-option .seleted-list .count .num-input-box input{
