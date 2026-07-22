@@ -67,14 +67,14 @@ const infoSecTotalPrice = document.querySelector('section.info-sec #total-price1
 //popup order form
 const popupFormMiffy = document.querySelector('#tab-order-form .miffy-value');
 const popupFormMiffyNum = document.querySelector('#tab-order-form .miffy-value input[type=number]')
-const popupFormMiffyNumMinus = document.querySelector('#tab-order-form .miffy-value button.minus');
-const popupFormMiffyNumPlus = document.querySelector('#tab-order-form .miffy-value button.plus');
+const popupFormMiffyNumMinus = document.querySelector('#tab-order-form .miffy-value span.minus');
+const popupFormMiffyNumPlus = document.querySelector('#tab-order-form .miffy-value span.plus');
 const popupFormMiffyPrice = document.querySelector('#tab-order-form .miffy-value input[type=text]');
 const popupFormMiffyDelet = document.querySelector('#tab-order-form .selected-option .miffy-value span.delet-btn');
 const popupFormMelanie = document.querySelector('#tab-order-form .melanie-value');
 const popupFormMelanieNum = document.querySelector('#tab-order-form .melanie-value input[type=number]');
-const popupFormMelanieNumMinus = document.querySelector('#tab-order-form .melanie-value button.minus');
-const popupFormMelanieNumPlus = document.querySelector('#tab-order-form .melanie-value button.plus');
+const popupFormMelanieNumMinus = document.querySelector('#tab-order-form .melanie-value span.minus');
+const popupFormMelanieNumPlus = document.querySelector('#tab-order-form .melanie-value span.plus');
 const popupFormMelaniePrice = document.querySelector('#tab-order-form .melanie-value input[type=text]');
 const popupFormMelanieDelet = document.querySelector('#tab-order-form .selected-option .melanie-value span.delet-btn');
 const popupFormTotalPrice = document.querySelector('#tab-order-form #total-price2');
