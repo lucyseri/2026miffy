@@ -107,7 +107,7 @@ heroBannerUl.addEventListener('pointerup', function(e){
         heroBannerUl.style.left = -1*currentNum*gap +'px';
         heroBannerUl.style.transition = 'left ease 0.3s';
       }
-    }else if(distance<50){
+    }else if(distance<-50){
       currentNum--;
       if(currentNum<=0){
         heroBannerUl.style.left = -1*(heroSlideLength-1)*gap +'px';
@@ -126,6 +126,9 @@ heroBannerUl.addEventListener('pointerup', function(e){
   }else{
     return;
   }
+});
+heroBannerUl.addEventListener("dragstart", e=>{
+    e.preventDefault();
 });
 //product list create
 import {storePageDataFn, classicData, seoulData, gyeongjuData, busanData, geojeData, jejuData} from './product-rawdata.js';

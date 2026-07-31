@@ -55,6 +55,8 @@ section .sec-con .sec-banner img.mobile{
 #hero-banner .banner-slider ul li a{
   border-radius: 16px;
   overflow: hidden;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 #hero-banner .banner-slider ul li a.tablet{
   display: none;
@@ -66,6 +68,8 @@ section .sec-con .sec-banner img.mobile{
   display: block;
   width: 100%;
   height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 #hero-banner .banner-slider span.slider-pager{
   display: flex;
