@@ -85,6 +85,9 @@ footer .footer-info .inner address p{
     line-height: 0.9rem;
     letter-spacing: 1.25px;
   }
+  footer .footer-info{
+    padding-bottom: 100px;
+  }
   footer .footer-info .inner{
     padding: 24px;
   }

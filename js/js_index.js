@@ -40,6 +40,16 @@ window.addEventListener('resize', function(){
     heroBannerHeightFn(ratioNum);
   }, 300)
 });
+//tab fn
+function sliderTabFn(num){
+  heroBannerUlLi.forEach((el, idx)=>{
+    if(idx == num){
+      el.inert=false;
+    }else{
+      el.inert=true;
+    }
+  });
+};
 //hero - auto slider
 const heroPagerCurrent = document.querySelector('#hero-banner .banner-slider span.slider-pager span.current');
 const heroPagerTotal = document.querySelector('#hero-banner .banner-slider span.slider-pager span.total');
@@ -63,6 +73,7 @@ function heroSliderFn(){
     heroBannerUl.style.left = -1*currentNum*gap +'px';
   }
   heroPagerCurrent.innerText = currentNum;
+  sliderTabFn(currentNum);
 };
 let heroSliderInt = setInterval(heroSliderFn, 3000);
 (()=>{heroSliderFn()})();

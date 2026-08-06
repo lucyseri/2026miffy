@@ -1,0 +1,105 @@
+main{
+  width: 100%;
+  min-height: calc(100vh - 280px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.menu-sec{
+  width: 100%;
+}
+main section.menu-sec .inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.menu-sec .inner ul{
+  flex: 0 1 400px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+main section.menu-sec .inner ul li{
+  flex: 0 0 calc((100% - 20px) / 2);
+  position: relative;
+}
+main section.menu-sec .inner ul li a{
+  border-radius: 16px;
+  overflow: hidden;
+}
+main section.menu-sec .inner ul li a img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+main section.menu-sec .inner ul li a img:hover{
+  transform: scale(1.12);
+}
+main section.menu-sec .inner ul li:hover::before{
+  content: '';
+  display: block;
+  width: 45px;
+  height: 36px;
+  background: url('../../img/icon/landing-img-hover.svg') no-repeat center / auto;
+  position: absolute;
+}
+main section.menu-sec .inner ul li:hover::after{
+  position: absolute;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+main section.menu-sec .inner ul li:nth-child(1):hover::before{
+  top: -16px;
+  left: -30px;
+  transform: rotate(-27deg);
+}
+main section.menu-sec .inner ul li:nth-child(1):hover::after{
+  content: '미피타운';
+  top: -32px;
+  left: 16px;
+}
+main section.menu-sec .inner ul li:nth-child(2):hover::before{
+  top: -16px;
+  right: -30px;
+  transform: rotate(120deg);
+}
+main section.menu-sec .inner ul li:nth-child(2):hover::after{
+  content: '미피자료실';
+  top: -32px;
+  right: 16px;
+}
+main section.menu-sec .inner ul li:nth-child(3):hover::before{
+  bottom: -16px;
+  left: -30px;
+  transform: rotate(300deg);
+}
+main section.menu-sec .inner ul li:nth-child(3):hover::after{
+  content: '프로젝트';
+  bottom: -32px;
+  left: 16px;
+}
+main section.menu-sec .inner ul li:nth-child(4):hover::before{
+  bottom: -16px;
+  right: -30px;
+  transform: rotate(330deg) scale(-1);
+}
+main section.menu-sec .inner ul li:nth-child(4):hover::after{
+  content: '스토어';
+  bottom: -32px;
+  right: 16px;
+}
+@media screen and (max-width: 1024px) {
+    main section.menu-sec .inner ul{
+    flex: 0 1 644px;
+  }
+}
+@media screen and (max-width: 440px) {
+    main section.menu-sec .inner ul{
+    flex: 0 1 262px;
+    gap: 14px;
+  }
+  main section.menu-sec .inner ul li{
+    flex: 0 0 calc((100% - 14px) / 2);
+  }
+}
