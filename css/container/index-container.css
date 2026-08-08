@@ -102,6 +102,7 @@ section.miffy-classic .sec-con .product-box{
   flex: 0 1 calc((100% - 20px) / 2);
 }
 section.miffy-classic .sec-con .product-box a.product-list{
+  width: 100%;
   display: flex;
   gap: 20px;
 }
@@ -121,7 +122,7 @@ section.miffy-classic .sec-con .product-box a.product-list .img-thum img{
   height: auto;
 }
 section.miffy-classic .sec-con .product-box a.product-list .info{
-  flex: 0 1 calc((100% - 20px * 2) / 3 + 20px);
+  flex: 0 1 calc((100% - 20px * 2) / 3 * 2 + 20px);
 }
 /* character menu */
 .character-menu{

@@ -181,6 +181,39 @@ a.product-list .info p.category{
   line-height: 0.8rem;
   font-weight: 700;
   color: var(--txt2-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+a.product-list .info p.category span.icons{
+  display: flex;
+  gap: 4px;
+  width: 44px;
+  height: 20px;
+}
+a.product-list .info p.category span.icons span.icon{
+  flex: 0 0 20px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url('../../img/icon/product-icon.svg');
+}
+a.product-list .info p.category span.icons span.cart{
+  background-position: -20px 0;
+}
+a.product-list .info p.category span.icons span.heart{
+  background-position: 0 0;
+  
+}
+a.product-list .info p.category span.icons span.cart:hover{
+  
+  background-position: -20px -20px;
+}
+a.product-list .info p.category span.icons span.heart:hover{
+  
+  background-position: 0 -20px;
 }
 a.product-list .info p.name{
   font-size: 0.8rem;
