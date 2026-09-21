@@ -18,7 +18,7 @@ header .top-menu .breadcrumb span.current-page::after{
   position: relative;
 }
 #skip a{
-  width: 400px;
+  width: 200px;
   position: absolute;
   top: -45px;
   left: 0;
